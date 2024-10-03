@@ -4942,10 +4942,7 @@ function or(l, r)
 }
 
 self.C3_ExpressionFuncs = [
-		p => {
-			const n0 = p._GetNode(0);
-			return () => (n0.ExpObject() - 650);
-		},
+		() => -450,
 		() => 0,
 		p => {
 			const n0 = p._GetNode(0);
@@ -4959,6 +4956,7 @@ self.C3_ExpressionFuncs = [
 			const v0 = p._GetNode(0).GetVar();
 			return () => and("HP:", v0.GetValue());
 		},
+		() => -100,
 		() => 1.5,
 		p => {
 			const n0 = p._GetNode(0);
